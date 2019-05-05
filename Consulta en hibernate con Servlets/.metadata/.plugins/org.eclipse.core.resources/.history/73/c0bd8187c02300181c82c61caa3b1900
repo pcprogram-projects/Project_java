@@ -1,0 +1,16 @@
+package com.Hospital;
+
+import java.util.Date;
+public class Paciente {
+
+	private int id;	
+	private String nombre;
+	private String apellidos;
+    private java.util.Date fecha_alta;
+
+	
+	
+	
+	
+	
+}

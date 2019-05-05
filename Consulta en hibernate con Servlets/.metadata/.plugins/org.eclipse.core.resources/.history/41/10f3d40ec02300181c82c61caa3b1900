@@ -1,0 +1,15 @@
+package com.Hospital;
+
+public class Paciente {
+
+	private int id;	
+	private String nombre;
+	private String apellidos;
+	private java.Date.util fecha_alta;
+
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,43 @@
+package com.Hospital;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) throws ParseException {
+		PacienteBO p = new PacienteBO();
+		SimpleDateFormat s = new SimpleDateFormat("yyyy-MM-dd");
+
+		//boolean ok=false;
+		
+		
+	//	while(ok) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("introduce 1 si quieres introducir paciente "+"\n"+ "introduce 2 si quieres eliminar paciente"+"\n");
+		String op = sc.nextLine();
+		if (op.equals(1)) {
+			
+			System.out.println("introduce el nombre del paciente");
+			String nombre = sc.nextLine();
+			System.out.println("introduce el apellido del paciente");
+			String apellido = sc.nextLine();
+			System.out.println("introduce la fecha YYY-MM-DD");
+			String fecha = sc.nextLine();
+			Date fe = s.parse(fecha);
+             
+			p.DarAltaPaciente(nombre, apellido, fe);
+		}
+		
+		
+	//	if(op.equals(5)) {
+			
+		}
+	}
+		
+	
+	
+	}
+}

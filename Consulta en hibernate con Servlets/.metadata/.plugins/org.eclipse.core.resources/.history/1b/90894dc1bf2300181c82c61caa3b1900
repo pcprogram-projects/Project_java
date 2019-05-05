@@ -1,0 +1,5 @@
+package com.Hospital;
+
+public class Paciente {
+
+}
